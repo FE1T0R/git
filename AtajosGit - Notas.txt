@@ -1,0 +1,41 @@
+ls // muestra los archivos y directorios del sitio posicionado
+pwd // muestra la ubicacion actual en la consola
+ 
+git -v // muestra la version de git
+git config -- global user.name (nombre del usuario) // para cambiar el usuario
+git config -- global user.email (correo del usuario) // para cambiar el email de usuario
+
+git init // inicia el repositiorio en la carpeta posicionada
+git add (nombre del o todos los archivos)// se "preparan" para ser incluidos en el repositorio
+
+git commit -m(mensaje del commit ) // Se "comprometen" o incluyen al respositorio los archivos "preparados" 
+git touch (nombre archivo.tipo) // se crea el archivo del tipo y nombre indicados
+
+git config -- global alias.(nombre del atajo personalizado) "(comando git simplificar )" //usado para crear un comando git personalizado a travez de un comando más largo.
+
+git diff // muestra las diferencias que se hallen en el ultimo commit y el ultimo guardado del archivo (sin preparar ni comprometer). sirve de igual manera para las branch
+
+git reset // ayuda a borrar los cambios en los ficheros que no se han commiteado.
+
+git checkout (lugar al que quiero moverme)// indica la posicion a la que quiero moverme con el HEAD.
+
+git tag (nombre) // comando ayuda a crear como un checkpoint de commits, sirve para ubicar un conjunto de commits sin tener que acudir a a la ruta completa del commit
+
+git branch (nombre)// crea una nueva rama para un nuevo flujo de trabajo.
+
+git branch -d (nombre existente)// Borra una rama.
+
+
+
+git switch (nombre de la rama existente)// Permite moverse a la rama indicada.
+
+git stash // permite guardar cambios pero no son comprometidos. por si se cambia a otras ramas
+
+git stash list // permite listar los cambios guardados pero no que no fueron comprometidos.
+
+git stash pop // permite traer los cambios guardados pero no que no fueron comprometidos.
+
+git stash drop // permite eliminar los stash guardados
+
+
+** Es importante tener presente que la rama MAIN es donde estan situadas todos lo commits generados y cuando se habla de HEAD es donde estamos situados en la interaccion con Git, es decir donde estamos parados en el repositorio, lo que lleva a pensar que puede que si el HEAD y el MAIN estan situados en diferentes commits es porque tuve que moverme para revisar algun cambio.
